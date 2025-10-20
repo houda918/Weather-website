@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    background: url('bg.jpg');
+    width: 100%;
+    height: 95dvh;
+    background-size: cover;
+    background-position: center;
+}
+.search_bar{
+    width: 50%; 
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px; 
+    font-size: 1rem;
+}
+.search_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    
+}
+.first_bar{
+    background-color: rgba(57, 57, 57, 0.5); 
+    color: white;
+    text-align: left;
+    padding: 20px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+.date-time {
+    font-size: 1.2rem;
+    text-align: right;
+    color: #ffffff;
+    white-space: nowrap;
+    margin-left: auto;
+}
+.btn_1{
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF; 
+    color: white;
+    font-size: 1rem;
+    border-radius: 0 5px 5px 0; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn_1:hover{
+    background-color: #0056b3;
+}
+
+.weather_container{
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #1c70d0cc;
+    border: 1px solid #ddd;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.forecast_container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.forecast-cards {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.forecast-card {
+    background:  #1c70d0cc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-card img {
+    width: 50px;
+    height: 50px;
+}
+#chart_container {
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #ffffffcc;
+    border: 1px solid #ddd;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+#weather-chart {
+    width: 100%; 
+    height: auto; 
+}
+
+.btn_2 {
+    background-color:#007BFF; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /
+}
+
+.btn_2:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn_2:active {
+    background-color: #0056b3; 
+    transform: scale(0.98); 
+}

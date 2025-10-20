@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather webpage</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+
+    </head>
+    <body class="bd">
+
+      <div class="container">
+        <header class="first_bar">
+          <p>Welcome to Sunny Clouds</p>
+          <div class="date-time" id="date-time"></div>
+        </header>
+      </div>
+          
+      <div class="search_container">
+        <input type="text" placeholder="Search for the weather in your place" class="search_bar" id="search">
+        <button class="btn_1" type="button" onclick="fetchWeatherWithGraph()">Search</button>
+        <button class="btn_2" type="button" onclick="fetchWeatherByLocation()">Use My Location</button>
+      </div>
+      <div class="weather_container" id="weather">
+      </div>
+      
+      <div id="chart_container">
+        <canvas id="weather-chart"></canvas>
+
+      </div>
+      <div class="forecast_container" id="forecast">
+       
+        <div id="forecast-cards" class="forecast-cards">
+            
+        </div>
+    </div>
+    
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="index.js"></script>
+    </body>
+</html>
